@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { GUI } from "dat.gui";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import put_in_scope_external_geom_input from "./import_file";
+import put_in_scope_external_geom_input from "./import_file_into_scene";
 
 /**
  * A class to set up some basic scene elements to minimize code in the
@@ -24,7 +24,7 @@ export default class BasicScene extends THREE.Scene {
   lights: Array<THREE.Light> = [];
 
   // Number of PointLight objects around origin
-  lightCount: number = 6;
+  lightCount: number = 2;
 
   // Distance above ground place
   lightDistance: number = 3;

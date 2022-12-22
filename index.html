@@ -7,22 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Cloud topology importer </title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="dist/main.js" type="application/javascript" defer></script>
 </head>
 
 <body>
-    <div id="upper-bar-menu">
-        <ul class="horizontal">
-            <li><a href="#">Home</a></li>
-            <li><a href="mailto: m.samiolo@adigecalculations.com">Contacts</a></li>
-        </ul>
-    </div>
     <div>
-        <input type="file" id="fileInput" accept=".obj" placeholder="Input your geometries in .obj format" multiple>
-    </div>
-    <div>
-        <canvas id="graphic-app" width="750" height="750"></canvas>
-    </div>
-</body>
+        <header>
+            <ul class="horizontal">
+                <li><a href="#">Home</a></li>
+                <li><a href="mailto: m.samiolo@adigecalculations.com">Contacts</a></li>
+            </ul>
+        </header>
+    <main>    
+        <div>
+        </div>
+        <div>
+            <canvas id="graphic-app"  width="500" height="500"></canvas>
+            <input id="fileInput" type="file" accept=".obj" multiple>
 
+        </div>
+    </main>
+
+<!-- 
+    <div class="drag-area">
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <header>Drag & Drop to Upload File</header>
+        <span>OR</span>
+        <button>Browse File</button>
+            <input id="fileInput" type="file" accept=".obj" multiple hidden>
+</div> -->
+
+</div>
+</body>
 </html>
