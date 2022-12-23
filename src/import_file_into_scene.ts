@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import { Group } from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 
 export default function put_in_scope_external_geom_input(scene: THREE.Scene) {

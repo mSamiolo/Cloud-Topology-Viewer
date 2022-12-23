@@ -1,3 +1,12 @@
+header {
+  width: 94%;
+  left: 3%; /* so it centers given the width you've used*/
+  height: 100px;
+  top: 30px;
+  background: rgb(240, 240, 240);
+  margin: 1%;
+}
+
 ul.horizontal{
     margin:0;
     padding:0;
@@ -12,6 +21,9 @@ ul.horizontal li{
 /* Drop file zone */
 
 canvas {
+  margin-top: 130px;
+  width: 550px;
+  height: 550px;
   background-image: url('cork.png');
   border: 1px inset black;
 }
@@ -24,7 +36,7 @@ canvas {
 body{
   display: flex;
   min-height: 100vh;
-  background: #d8e7f5;
+  background: #e8f0f0;
 }
 .drag-area{
   border: 2px dashed #fff;
