@@ -1,26 +1,32 @@
 {
-  "name": "three.js-typescript",
-  "version": "1.0.0",
-  "description": "Examples of how the threee.js library is used in a statically typed language",
-  "main": "main.js",
+  "name": "gates",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc main.ts"
+    "dev": "vite",
+    "build": "vite build && cp -r dist/* ../LandingPage/dist/",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "test:e2e": "nightwatch tests/e2e/*"
   },
-  "author": "Mattia Samiolo",
-  "license": "ISC",
   "dependencies": {
-    "dat.gui": "^0.7.9",
-    "three": "^0.147.0"
+    "three": "^0.177.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@types/dat.gui": "^0.7.7",
-    "@types/three": "^0.146.0",
-    "source-map-loader": "^4.0.1",
-    "ts-loader": "^9.4.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.4",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "@nightwatch/vue": "^3.1.2",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/test-utils": "^2.4.6",
+    "chromedriver": "^135.0.0",
+    "geckodriver": "^5.0.0",
+    "jsdom": "^26.0.0",
+    "nightwatch": "^3.12.1",
+    "ts-node": "^10.9.2",
+    "vite": "^6.2.4",
+    "vite-plugin-nightwatch": "^0.4.6",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vitest": "^3.1.1"
   }
 }

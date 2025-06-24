@@ -1,30 +1,53 @@
-# Cloud Topology viewer
+# Gates
 
-This repo contain the code to build a web-app that consist of a viewer for .obj files to perform 
-pre/post processing operation on specific topology.
+This template should help get you started developing with Vue 3 in Vite.
 
-## View of the application
+## Recommended IDE Setup
 
-A little preview of what the application consist of, a viewer and a loader.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-<img src="src/images/first-graphic-iteration-of-the-project.png" >
-  
-## Build the project
+## Customize configuration
 
-From the root of the project. Install the dependencies:
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-```sh
-npm install 
-```
-
-Build the application:
+## Project Setup
 
 ```sh
-npx webpack
+pnpm install
+pnpm approve-builds # for pnpm 10+
 ```
 
-Now you can serve the application bu using a simple web server to serve the index.html file:
+### Compile and Hot-Reload for Development
 
 ```sh
-python3 -m http.server
+pnpm dev
 ```
+
+### Compile and Minify for Production
+
+```sh
+pnpm build
+```
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+pnpm test:unit
+```
+
+### Run End-to-End Tests with [Nightwatch](https://nightwatchjs.org/)
+
+```sh
+# When using CI, the project must be built first.
+pnpm build
+
+# Runs the end-to-end tests
+pnpm test:e2e
+# Runs the tests only on Chrome
+pnpm test:e2e --env chrome
+# Runs the tests of a specific file
+pnpm test:e2e tests/e2e/example.js
+# Runs the tests in debug mode
+pnpm test:e2e --debug
+```
+    
