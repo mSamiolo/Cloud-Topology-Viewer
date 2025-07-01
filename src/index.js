@@ -1,8 +1,8 @@
-import MSVueLoader from './3D_loading_handler/MSVueLoader.vue'
+import SceneManagement from './components/scene_management/SceneManagement.vue'
 
 const install = (app) => {
-  app.component("registered-3dloader", MSVueLoader)
+  app.component("registered-3dloader", SceneManagement)
 }
 
-export default { install, MSVueLoader }
+export default { install, SceneManagement }
 
